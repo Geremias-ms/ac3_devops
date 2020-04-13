@@ -5,7 +5,7 @@ from math import sqrt
 app = Flask(__name__)
 
 @app.route('/')
-def nao_entre_em_panico():
+def ehprimo(primo):
     for i in range(2, primo+1):
         if i != primo:
             i = primo % i
@@ -15,16 +15,20 @@ def nao_entre_em_panico():
         else:
             return True
             break
+
+
+def test():
     N = int(input("Digite um valor: "))
     cont = 0
     num = 2
     primos = ""
     while cont <= N:
         if ehprimo(num) is True:
-            primos = primos + str(num)+","
+            primos =  + str(num)+","
             cont += 1
         num = num + 1
-    return primos
+    return a
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
