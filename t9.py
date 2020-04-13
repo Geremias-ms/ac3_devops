@@ -5,32 +5,29 @@ from math import sqrt
 app = Flask(__name__)
 
 @app.route('/')
-def ehprimo(primo):
-    for i in range(2, primo+1):
-        if i != primo:
-            i = primo % i
-            if i == 0:
-                return False
+def nao_entre_em_panico():
+
+    limite = 99
+
+    c = 1
+    p = 1
+    numero = 3
+
+    primos = "2,"
+
+    while p < limite:
+        ehprimo = 1
+        for i in range(2, numero):
+            if numero % i == 0:
+                ehprimo = 0
                 break
-        else:
-            return True
-            break
+        if (ehprimo):
+            primos = primos + str(numero) + ","
+            p += 1
+        numero+=1
 
-
-def test():
-    N = int(input("Digite um valor: "))
-    cont = 0
-    num = 2
-    primos = ""
-    while cont <= N:
-        if ehprimo(num) is True:
-            primos =  + str(num)+","
-            cont += 1
-        num = num + 1
-    return a
-
+    return primos
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
-
