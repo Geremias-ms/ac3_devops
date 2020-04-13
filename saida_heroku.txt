@@ -1,0 +1,50 @@
+2020-04-13T23:16:08.979326+00:00 app[api]: Release v2 created by user geremias.martsantos@gmail.com
+2020-04-13T23:16:08.979326+00:00 app[api]: Enable Logplex by user geremias.martsantos@gmail.com
+2020-04-13T23:16:08.325677+00:00 app[api]: Initial release by user geremias.martsantos@gmail.com
+2020-04-13T23:16:08.325677+00:00 app[api]: Release v1 created by user geremias.martsantos@gmail.com
+2020-04-13T23:22:06.000000+00:00 app[api]: Build started by user geremias.martsantos@gmail.com
+2020-04-13T23:22:32.420268+00:00 app[api]: Scaled to web@1:Free by user geremias.martsantos@gmail.com
+2020-04-13T23:22:32.403800+00:00 app[api]: Release v3 created by user geremias.martsantos@gmail.com
+2020-04-13T23:22:32.403800+00:00 app[api]: Deploy 46dfb27e by user geremias.martsantos@gmail.com
+2020-04-13T23:22:37.858936+00:00 app[web.1]: * Running on http://0.0.0.0:54747/ (Press CTRL+C to quit)
+2020-04-13T23:22:38.466231+00:00 heroku[web.1]: State changed from starting to up
+2020-04-13T23:22:41.000000+00:00 app[api]: Build succeeded
+2020-04-13T23:23:37.325779+00:00 app[web.1]: [2020-04-13 23:23:37,324] ERROR in app: Exception on / [GET]
+2020-04-13T23:23:37.325815+00:00 app[web.1]: Traceback (most recent call last):
+2020-04-13T23:23:37.325817+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/app.py", line 1982, in wsgi_app
+2020-04-13T23:23:37.325817+00:00 app[web.1]: response = self.full_dispatch_request()
+2020-04-13T23:23:37.325817+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+2020-04-13T23:23:37.325818+00:00 app[web.1]: rv = self.handle_user_exception(e)
+2020-04-13T23:23:37.325818+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+2020-04-13T23:23:37.325818+00:00 app[web.1]: reraise(exc_type, exc_value, tb)
+2020-04-13T23:23:37.325818+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/_compat.py", line 33, in reraise
+2020-04-13T23:23:37.325819+00:00 app[web.1]: raise value
+2020-04-13T23:23:37.325819+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+2020-04-13T23:23:37.325819+00:00 app[web.1]: rv = self.dispatch_request()
+2020-04-13T23:23:37.325819+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/app.py", line 1598, in dispatch_request
+2020-04-13T23:23:37.325820+00:00 app[web.1]: return self.view_functions[rule.endpoint](**req.view_args)
+2020-04-13T23:23:37.325820+00:00 app[web.1]: TypeError: ehprimo() missing 1 required positional argument: 'primo'
+2020-04-13T23:23:37.326049+00:00 app[web.1]: 10.52.9.178 - - [13/Apr/2020 23:23:37] "GET / HTTP/1.1" 500 -
+2020-04-13T23:23:37.328951+00:00 heroku[router]: at=info method=GET path="/" host=gentle-badlands-03504.herokuapp.com request_id=9cade204-14b2-4bad-9cc8-6d8efd5e874f fwd="45.165.62.68" dyno=web.1 connect=1ms service=4ms status=500 bytes=450 protocol=https
+2020-04-13T23:23:37.790117+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=gentle-badlands-03504.herokuapp.com request_id=c97ebf50-c327-4560-ba99-de1047c3488e fwd="45.165.62.68" dyno=web.1 connect=0ms service=9ms status=404 bytes=380 protocol=https
+2020-04-13T23:23:37.787115+00:00 app[web.1]: 10.52.9.178 - - [13/Apr/2020 23:23:37] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-13T23:35:20.000000+00:00 app[api]: Build started by user geremias.martsantos@gmail.com
+2020-04-13T23:35:52.956703+00:00 app[api]: Release v4 created by user geremias.martsantos@gmail.com
+2020-04-13T23:35:52.956703+00:00 app[api]: Deploy e95fdb65 by user geremias.martsantos@gmail.com
+2020-04-13T23:35:53.989600+00:00 heroku[web.1]: Restarting
+2020-04-13T23:35:54.001910+00:00 heroku[web.1]: State changed from up to starting
+2020-04-13T23:35:59.256042+00:00 heroku[web.1]: State changed from starting to up
+2020-04-13T23:35:59.096275+00:00 app[web.1]: * Running on http://0.0.0.0:41419/ (Press CTRL+C to quit)
+2020-04-13T23:36:01.000000+00:00 app[api]: Build succeeded
+2020-04-13T23:36:14.699562+00:00 heroku[router]: at=info method=GET path="/" host=gentle-badlands-03504.herokuapp.com request_id=6eae5c04-b8ea-4cc6-b10c-9f2a26ede756 fwd="45.165.62.68" dyno=web.1 connect=0ms service=4ms status=200 bytes=522 protocol=https
+2020-04-13T23:36:14.697680+00:00 app[web.1]: 10.35.248.8 - - [13/Apr/2020 23:36:14] "GET / HTTP/1.1" 200 -
+2020-04-13T23:37:25.000000+00:00 app[api]: Build started by user geremias.martsantos@gmail.com
+2020-04-13T23:37:46.580522+00:00 heroku[web.1]: Restarting
+2020-04-13T23:37:46.596781+00:00 heroku[web.1]: State changed from up to starting
+2020-04-13T23:37:46.331540+00:00 app[api]: Release v5 created by user geremias.martsantos@gmail.com
+2020-04-13T23:37:46.331540+00:00 app[api]: Deploy 6785d55e by user geremias.martsantos@gmail.com
+2020-04-13T23:37:51.699177+00:00 heroku[web.1]: State changed from starting to up
+2020-04-13T23:37:51.472420+00:00 app[web.1]: * Running on http://0.0.0.0:13707/ (Press CTRL+C to quit)
+2020-04-13T23:37:54.000000+00:00 app[api]: Build succeeded
+2020-04-13T23:38:02.073126+00:00 app[web.1]: 10.157.87.30 - - [13/Apr/2020 23:38:02] "GET / HTTP/1.1" 200 -
+2020-04-13T23:38:02.075694+00:00 heroku[router]: at=info method=GET path="/" host=gentle-badlands-03504.herokuapp.com request_id=bb60c0c1-91e6-4a0d-9d33-7037f5864d1f fwd="45.165.62.68" dyno=web.1 connect=1ms service=4ms status=200 bytes=526 protocol=https
